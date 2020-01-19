@@ -1,0 +1,152 @@
+{
+  "start": "2020-01-19T05:50:43.903Z",
+  "end": "2020-01-19T05:52:58.408Z",
+  "capabilities": {
+    "acceptInsecureCerts": false,
+    "acceptSslCerts": false,
+    "applicationCacheEnabled": false,
+    "browserConnectionEnabled": false,
+    "browserName": "chrome",
+    "chrome": {
+      "chromedriverVersion": "2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a)",
+      "userDataDir": "C:\\Users\\Santosh\\AppData\\Local\\Temp\\scoped_dir18244_11407"
+    },
+    "cssSelectorsEnabled": true,
+    "databaseEnabled": false,
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:55479"
+    },
+    "handlesAlerts": true,
+    "hasTouchScreen": false,
+    "javascriptEnabled": true,
+    "locationContextEnabled": true,
+    "mobileEmulationEnabled": false,
+    "nativeEvents": true,
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platform": "Windows NT",
+    "rotatable": false,
+    "setWindowRect": true,
+    "takesHeapSnapshot": true,
+    "takesScreenshot": true,
+    "unexpectedAlertBehaviour": "",
+    "version": "79.0.3945.117",
+    "webStorageEnabled": true,
+    "webdriver.remote.sessionid": "68a60efee4cf705efdfc0cfc5b4251ab",
+    "sessionId": "68a60efee4cf705efdfc0cfc5b4251ab"
+  },
+  "host": "127.0.0.1",
+  "port": 4444,
+  "baseUrl": "https://www.sbs.com.au/",
+  "framework": "cucumber",
+  "mochaOpts": {
+    "timeout": 10000
+  },
+  "duration": 134505,
+  "suites": [
+    {
+      "title": "Test the player functionality",
+      "duration": 133013,
+      "start": "2020-01-19T05:50:45.136Z",
+      "end": "2020-01-19T05:52:58.149Z",
+      "tests": [],
+      "hooks": []
+    },
+    {
+      "title": "Perform player tests",
+      "duration": 132524,
+      "start": "2020-01-19T05:50:45.143Z",
+      "end": "2020-01-19T05:52:57.667Z",
+      "tests": [
+        {
+          "title": "Given I am on the SBS page",
+          "start": "2020-01-19T05:50:45.147Z",
+          "end": "2020-01-19T05:50:52.983Z",
+          "duration": 7836,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "When I click on preview button",
+          "start": "2020-01-19T05:50:52.983Z",
+          "end": "2020-01-19T05:50:54.035Z",
+          "duration": 1052,
+          "state": "passed",
+          "screenshots": [
+            "E:\\SBS_TEST\\TestPlayer\\test\\reports\\timeline-report\\file-1579413053565.jpeg"
+          ]
+        },
+        {
+          "title": "Then The video should play on the page",
+          "start": "2020-01-19T05:50:54.035Z",
+          "end": "2020-01-19T05:50:54.896Z",
+          "duration": 861,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "When I pause the video",
+          "start": "2020-01-19T05:50:54.897Z",
+          "end": "2020-01-19T05:50:55.964Z",
+          "duration": 1067,
+          "state": "passed",
+          "screenshots": [
+            "E:\\SBS_TEST\\TestPlayer\\test\\reports\\timeline-report\\file-1579413055674.jpeg"
+          ]
+        },
+        {
+          "title": "When I play the video for 2 minutes",
+          "start": "2020-01-19T05:50:55.964Z",
+          "end": "2020-01-19T05:52:56.988Z",
+          "duration": 121024,
+          "state": "passed",
+          "screenshots": [
+            "E:\\SBS_TEST\\TestPlayer\\test\\reports\\timeline-report\\file-1579413056704.jpeg"
+          ]
+        },
+        {
+          "title": "And I pause the video content",
+          "start": "2020-01-19T05:52:56.989Z",
+          "end": "2020-01-19T05:52:57.631Z",
+          "duration": 642,
+          "state": "passed",
+          "screenshots": [
+            "E:\\SBS_TEST\\TestPlayer\\test\\reports\\timeline-report\\file-1579413177540.jpeg"
+          ]
+        },
+        {
+          "title": "Then The video should stop playing",
+          "start": "2020-01-19T05:52:57.631Z",
+          "end": "2020-01-19T05:52:57.665Z",
+          "duration": 34,
+          "state": "passed",
+          "screenshots": []
+        }
+      ],
+      "hooks": [
+        {
+          "start": "2020-01-19T05:50:45.144Z",
+          "end": "2020-01-19T05:50:45.146Z",
+          "duration": 2,
+          "title": "Hook",
+          "associatedSuite": "Test the player functionality: Perform player tests"
+        },
+        {
+          "start": "2020-01-19T05:52:57.665Z",
+          "end": "2020-01-19T05:52:57.666Z",
+          "duration": 1,
+          "title": "Hook",
+          "associatedSuite": "Test the player functionality: Perform player tests"
+        }
+      ]
+    }
+  ],
+  "specs": [
+    "E:\\SBS_TEST\\TestPlayer\\test\\features\\playerTest.feature"
+  ],
+  "state": {
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0
+  }
+}
