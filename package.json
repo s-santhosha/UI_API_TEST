@@ -8,7 +8,7 @@
   },
   "scripts": {
     "web-test": "./node_modules/.bin/wdio ./test/config/web.suite.cucumber.conf.js",
-    "api-test": "./node_modules/.bin/mocha ./test/api_test/specs/*.js",
+    "api-test": "./node_modules/.bin/mocha ./test/api_test/specs/api-test.js",
     "api-web-test": "./node_modules/.bin/wdio ./test/config/web.test.wdio.conf.js"
   },
   "author": "Santosh Subramanya",
@@ -30,6 +30,7 @@
     "body-parser": "^1.19.0",
     "gherkin": "^7.0.4",
     "junit-viewer": "^4.11.1",
+    "line-reader": "^0.4.0",
     "lodash": "^4.17.4",
     "mocha": "^7.0.0",
     "node-excel-to-json": "0.0.3",
