@@ -17,9 +17,9 @@ describe("sbs radio location test", () => {
           if (err) throw err;
         });
 
-        fs.writeFileSync("Ouput.txt", response.length + "\n", err => {
-          if (err) throw err;
-        });
+        // fs.writeFileSync("Ouput.txt", response.length + "\n", err => {
+        //   if (err) throw err;
+        // });
 
         for (let i = 0; i < response.length; i++) {
           let mp3List = response[i].archiveAudio.mp3;

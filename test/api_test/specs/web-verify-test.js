@@ -8,10 +8,13 @@ describe("sbs radio location test", () => {
 
     let rows = $$(".audio-playlist__body .audio-playlist__item");
     let rowCount = rows.length;
-    console.log("row count is", rowCount);
 
-    lineReader.eachLine("Output.txt", function(line) {
-      console.log(line);
-    });
+    let textContent = fs.readFileSync("Ouput.txt").toString();
+    let lines = textContent.split("\n");
+    let totalLineCount = lines.length - 1;
+
+    if (totalLineCount == rowCount) {
+      console.log("Api Test mp3 count matches the count on the webpage");
+    }
   });
 });
