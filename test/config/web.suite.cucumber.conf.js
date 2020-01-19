@@ -70,7 +70,7 @@ exports.config = {
         //headless
         // args: ['--headless', '--disable-gpu', 'start-maximized', 'no-sandbox'],
       }
-    }   
+    }
   ],
   //
   // ===================
@@ -101,12 +101,13 @@ exports.config = {
   connectionRetryTimeout: 90000, // Default timeout in milliseconds for request if Selenium Grid doesn't send response
   connectionRetryCount: 5, // Default request retries count
 
-  services: [['selenium-standalone'], [HtmlReporter], [TimelineService], ['devtools'], ['docker']],
-
-  // services: [browserstack'],
-  // user: process.env.BROWSERSTACK_USERNAME,
-  // key: process.env.BROWSERSTACK_ACCESS_KEY,
-  // browserstackLocal: true,
+  services: [
+    ["selenium-standalone"],
+    [HtmlReporter],
+    [TimelineService],
+    ["devtools"],
+    ["docker"]
+  ],
 
   framework: "cucumber",
 
@@ -161,31 +162,19 @@ exports.config = {
    * @param {Object} config wdio configuration object
    * @param {Array.<Object>} capabilities list of capabilities details
    */
-  // onPrepare: function (config, capabilities) {
-  //   console.log('**** let\'s go ****');
+  // onPrepare: function(config, capabilities) {
+  //   console.log("**** let's go ****");
   //   let reportAggregator = new ReportAggregator({
-  //     outputDir: './reports/html-reports/',
-  //     filename: 'master-report.html',
-  //     reportTitle: 'Master Report'
+  //     outputDir: "./reports/html-reports/",
+  //     filename: "webtest-report.html",
+  //     reportTitle: "SBS Video Player Test Report"
   //   });
   //   reportAggregator.clean();
 
   //   global.reportAggregator = reportAggregator;
   // },
 
-  // onPrepare: function (config, capabilities) {
-
-  //   let reportAggregator = new ReportAggregator({
-  //     outputDir: './test/reports/html-reports/',
-  //     filename: 'refinance-report.html',
-  //     reportTitle: 'Refinance Test Report'
-  //   });
-  //   reportAggregator.clean();
-
-  //   global.reportAggregator = reportAggregator;
-  // },
-
-  // onComplete: function (exitCode, config, capabilities, results) {
+  // onComplete: function(exitCode, config, capabilities, results) {
   //   (async () => {
   //     await global.reportAggregator.createReport({
   //       config: config,
