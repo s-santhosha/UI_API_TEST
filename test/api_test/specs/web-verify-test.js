@@ -1,6 +1,5 @@
 const fs = require("fs");
-const readline = require("readline");
-const lineReader = require("line-reader");
+const assert = require("chai").assert;
 
 describe("sbs radio location test", () => {
   it("should get hindi radio list", () => {
@@ -14,7 +13,7 @@ describe("sbs radio location test", () => {
     let totalLineCount = lines.length - 1;
 
     if (totalLineCount == rowCount) {
-      console.log("Api Test mp3 count matches the count on the webpage");
+      assert(totalLineCount == rowCount, "mp3 playlist matches");
     }
   });
 });
