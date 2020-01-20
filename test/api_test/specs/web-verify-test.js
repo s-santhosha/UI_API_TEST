@@ -12,8 +12,6 @@ describe("sbs radio location test", () => {
     let lines = textContent.split("\n");
     let totalLineCount = lines.length - 1;
 
-    if (totalLineCount == rowCount) {
-      assert(totalLineCount == rowCount, "mp3 playlist matches");
-    }
+    assert.equal(totalLineCount, rowCount);
   });
 });
