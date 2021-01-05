@@ -26,7 +26,7 @@
     "@wdio/junit-reporter": "^5.3.1",
     "@wdio/sauce-service": "^5.3.2",
     "assert": "^1.4.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "gherkin": "^7.0.4",
     "junit-viewer": "^4.11.1",
